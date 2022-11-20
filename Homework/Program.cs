@@ -51,6 +51,7 @@ else
 }
 */
 
+/*
 Console.WriteLine("Введите число от 1 до 7");
 int number = Convert.ToInt32(Console.ReadLine());
 //int number1 = new Random().Next(0, 6);//
@@ -89,10 +90,66 @@ else if (number == 6)
 
 else if (number == 7)
 {
-    Console.WriteLine("Воскресенье");
+    int result = number * number
 }
 
 else 
 {
     Console.WriteLine("Некорректное число");
 }
+*/
+
+/*
+static void Main(string[] args)
+{
+
+    Console.WriteLine("Введите число");
+    int number = Convert.ToInt32(Console.ReadLine());
+    PrintPower();
+
+    void PrintPower()
+    {
+        Console.WriteLine($"{number} * {number} = {number * number}");
+    }
+
+
+}
+*/
+
+/* Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+int i = number;
+Console.WriteLine("");
+while (i > 0)
+{
+   Console.Write($" -{i} ");
+   i = i - 1;
+}
+
+if (i == 0) Console.WriteLine("0");
+
+i = 1;
+while (i <= number)
+{
+    Console.Write($" {i} ");
+    i = i + 1;
+}
+*/
+
+
+
+//static void Main(string[] args)
+//{//
+
+    Console.WriteLine("Введите число");
+    int number = Convert.ToInt32(Console.ReadLine());
+    PrintPower(number);
+
+    void PrintPower(int number)
+    {
+        Console.WriteLine($"{number} * {number} = {number * number}");
+    }
+
+
+//}//
+
