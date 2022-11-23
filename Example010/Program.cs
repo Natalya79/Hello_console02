@@ -8,49 +8,99 @@ Console.WriteLine(day);
 */
 
 /*
-// Преобразование текста - ошибка
-string text = "99757 65 ";
-string Replace(string text, char OldValue, char NewValue)
+// Преобразование текста 
+string text = "Наташа  ";
+string Replace(string text, char oldValue, char newValue)
 {
     string result = String.Empty;
     int length = text.Length;
     for (int i = 0; i < length; i++)
     { 
-        if(text[i] == OldValue) result = result + $"{NewValue}";
-        else result = result + text[i];
+        if(text[i] == oldValue) result = result + $"{newValue}";
+        else result = result + $"{text[i]}";
     }
 return result;
 }
-string NewText = Replace (text, " ", "+");
-Console.WriteLine(NewText);
-Console.WriteLine();
-NewText = Replace (text, "9", "10");
+string newText = Replace(text, ' ', '+');
 
+Console.WriteLine(newText);
+Console.WriteLine();
+
+newText = Replace(newText, 'Н', 'N');
+Console.WriteLine(newText);
 */
 
-int [] arr = {1, 4, 6, 8, 3, 6, 8, 4};
+/*
+// Упорядочить массив. Min
+
+int[] arr = {1, 4, 6, 8, 3, 6, 8, 4};
 void PrintArray(int[] array)
 {
    int count = array.Length;
-    for (int i = 0, i < count; i++)    
+
+    for (int i = 0; i < count; i++)    
     {
-        Console.WriteLine($"{array[i]} ");
+        Console.Write($"{array[i]} ");
     }
     Console.WriteLine();
 }
-PrintArray(arr);
 
-/*
 void SelectionSort(int[] array)
 {
    int count = array.Length;
-    for (int i = 0, i < array.Length; i++)    
+    for (int i = 0; i < array.Length - 1; i++)    
     {
-        int minPosition = i;
+        int minPosition = i; // позиция рабочего элемента, с которым будут производится действия
+
+        for (int j = i + 1; j < array.Length; j++)    
+    {
+        if(array[j] < array[minPosition]) minPosition = j;
+    }
         int temporary = array [i];
-        array
+        array[i] = array[minPosition]; 
+        array[minPosition] = temporary;
+    }
+   
+}
+PrintArray(arr);
+SelectionSort(arr);
+PrintArray(arr);
+
+*/
+
+/*
+// Упорядочить массив. Max
+
+int[] arr = {1, 4, 6, 8, 3, 6, 8, 4};
+void PrintArray(int[] array)
+{
+   int count = array.Length;
+
+    for (int i = 0; i < count; i++)    
+    {
+        Console.Write($"{array[i]} ");
     }
     Console.WriteLine();
 }
-PrintArray (arr);
+
+void SelectionSort(int[] array)
+{
+   int count = array.Length;
+    for (int i = 0; i < array.Length - 1; i++)    
+    {
+        int maxPosition = i; // позиция рабочего элемента, с которым будут производится действия
+
+        for (int j = i + 1; j < array.Length; j++)    
+    {
+        if(array[j] > array[maxPosition]) maxPosition = j;
+    }
+        int temporary = array [i];
+        array[i] = array[maxPosition]; 
+        array[maxPosition] = temporary;
+    }
+   
+}
+PrintArray(arr);
+SelectionSort(arr);
+PrintArray(arr);
 */
