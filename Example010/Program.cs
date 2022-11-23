@@ -34,10 +34,12 @@ void PrintArray(int[] array)
    int count = array.Length;
     for (int i = 0, i < count; i++)    
     {
-        System.Console.WriteLine($"{array[i]}");
+        Console.WriteLine($"{array[i]} ");
     }
     Console.WriteLine();
 }
+PrintArray(arr);
+
 /*
 void SelectionSort(int[] array)
 {
