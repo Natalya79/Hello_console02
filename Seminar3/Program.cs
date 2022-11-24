@@ -81,8 +81,31 @@ void Zadacha18()
 Zadacha18();
 */
 
-/*
+
+
 // 21. напишите программу, которая принимает на вход координаты двух точек и находит расстояние 
 // между ними в двухмерном пространстве
 
-void Zadacha18()
+void Zadacha21()
+{
+    Console.WriteLine("Введите координату х1");
+    int x1 = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Введите координату y1");
+    int y1 = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Введите координату x2");
+    int x2 = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Введите координату y2");
+    int y2 = Convert.ToInt32(Console.ReadLine());
+    // Math.Pow(x); - возведение в степень
+    // Math.Sqrt(x); - извлечение квадратного корня
+    // Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2)); - формула вычисления длины отрезка 
+    // квадратный корень из квадрата гипотенузы - суммы квадратов катетов (длина каждого катета как 
+    // разница между горизотальными и вертикальными координатами)
+    double dist = 0;
+    dist = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+    Console.WriteLine($"Длина отрезка равна {dist}");
+}
+Zadacha21();
