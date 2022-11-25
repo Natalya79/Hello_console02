@@ -33,7 +33,34 @@ if (number3 > max) max = number3;
    // Это примитивный способ. Нужно посмотреть, как решить другим способом (лучше), через индекс i и цикл while
    */
 
-   /*6. Напишите программу, которая на вход принимает число и выдаёт, является ли оно чётным
+//4. Напишите программу, которая на вход принимает три числа и выдаёт максимальное. Второй способ
+/* 
+int MaxNumber(int a, int b)
+{
+    if (a > b) return a;
+    else return b;
+}
+
+void Zadacha4()
+
+{
+    Console.WriteLine("Введите число A");
+    int number1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите число B");
+    int number2 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите число С");
+    int number3 = Convert.ToInt32(Console.ReadLine());
+
+
+    Console.WriteLine($"Максимальное число" + " " + MaxNumber(number1, MaxNumber(number2, number3))); // первое число сравнили с результатом сравнения 
+    // второго числа и треьего - с применением метода MaxNumber
+}
+Zadacha4();
+*/
+
+
+
+/*6. Напишите программу, которая на вход принимает число и выдаёт, является ли оно чётным
 
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
