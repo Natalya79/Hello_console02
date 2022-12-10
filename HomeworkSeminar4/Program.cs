@@ -62,29 +62,29 @@ void Zadacha27()
 
 void Zadacha29()
 {
-    int[] numbers = new int[8];
+    int[] numbers = new int[5];
     Random rand = new Random();
 
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 5; i++)
     {
-        numbers[i] = rand.Next(-100, 100);
+        numbers[i] = rand.Next(0, 10);
         Console.Write(numbers[i] + "  ");
     }
 
     Console.WriteLine("Массив из 8 случайных чисел от 1 до 100");
 
-    for (int i = 0; i < 8; i++)
-    {
-        if (numbers[i] < 0) numbers[i] = numbers[i] * -1;
-        Console.Write(numbers[i] + "  ");
-    }
-    Console.WriteLine("Модули чисел массива");
+    //for (int i = 0; i < 8; i++)
+    //{
+        //if (numbers[i] < 0) numbers[i] = numbers[i] * -1;
+        //Console.Write(numbers[i] + "  ");
+   // }
+    //Console.WriteLine("Модули чисел массива");
 
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 5; i++)
     {
         int minPosition = i;
 
-        for (int j = i + 1; j < 8; j++)
+        for (int j = i + 1; j <= 4; j++)
         {
             if (numbers[j] < numbers[minPosition]) minPosition = j;
         }
@@ -93,10 +93,10 @@ void Zadacha29()
         numbers[minPosition] = temporary;
         Console.Write(numbers[i] + "  ");
     }
-Console.WriteLine("Массив, отсортированный по модулю");
+//Console.WriteLine("Массив, отсортированный по модулю");
 }
 
-Zadacha25();
-Zadacha25_1();
-Zadacha27();
+//Zadacha25();
+//Zadacha25_1();
+//Zadacha27();
 Zadacha29();

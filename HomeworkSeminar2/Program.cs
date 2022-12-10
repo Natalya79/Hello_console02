@@ -25,7 +25,7 @@ void Zadacha13()
 {
     Console.WriteLine("Введите  число");
     int number = Convert.ToInt32(Console.ReadLine());
-    // Console.WriteLine(ConvertToSrting(number)[2]); - число будет конвертировано в строку и выведется элемент
+    // Console.WriteLine(ConvertToString(number)[2]); - число будет конвертировано в строку и выведется элемент
     //с индексом 2, т.е. третий
        while (number > 999)  number = number / 10;
     
