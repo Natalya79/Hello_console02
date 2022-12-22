@@ -85,20 +85,11 @@ void Zadacha50()
         }
     }
 
-    bool result = false;
-    for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < colums; j++)
-        {
-            if (number1 == i + 1 && number2 == j + 1)
-            Console.WriteLine($"Значение элемента {numbers[i, j]}");
-            result = true;
-        }
-        Console.WriteLine();
-    }
-    if (result == false) return;
-    Console.WriteLine($"Такого элемента в массиве нет"); // как добиться того, чтобы эта строчка не появлялась
-    // при положительном результата, к сожалению, не знаю
+ 
+
+    if (number1 > rows || number2 > colums) Console.WriteLine($"Такого элемента в массиве нет");
+    else Console.WriteLine($"Значение элемента {numbers[number1-1, number2-1]}");
+    
     Console.WriteLine();
 }
 

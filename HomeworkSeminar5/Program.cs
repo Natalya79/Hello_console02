@@ -46,7 +46,7 @@
     }
 
 }
- Zadacha34();
+// Zadacha34();
 
 void Zadacha36()
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов 
@@ -96,5 +96,37 @@ void Zadacha36()
     }
 
 }
- Zadacha36();
+//Zadacha36();
 
+void Zadacha38()
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов 
+// массива
+{
+    int size = 7;
+    double[] numbers = new double[size];
+    Random rand = new Random();
+    double divider = 100;
+
+    for (int i = 0; i < size; i++)
+    {
+        // numbers[i] = rand.Next(1000, 10000)/divider;
+        numbers[i] = Math.Round(rand.NextDouble() * 20 - 10, 2); // [0, 1] * 20 -->[0, 20] - 10 -->[-10, 10]
+    }
+    PrintArray(numbers);
+
+    void PrintArray(double[] numbers)
+    {
+
+        int size = 7;
+        Console.WriteLine("Вывод массива:");
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write(numbers[i] + " ");
+        }
+        Console.WriteLine();
+    }
+
+}
+
+
+Zadacha38();

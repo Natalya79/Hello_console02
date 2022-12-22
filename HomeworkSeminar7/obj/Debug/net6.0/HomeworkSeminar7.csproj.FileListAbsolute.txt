@@ -1,0 +1,15 @@
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\HomeworkSeminar7.csproj.AssemblyReference.cache
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\HomeworkSeminar7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\HomeworkSeminar7.AssemblyInfoInputs.cache
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\HomeworkSeminar7.AssemblyInfo.cs
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\HomeworkSeminar7.csproj.CoreCompileInputs.cache
+C:\Users\Света\Examples\HomeworkSeminar7\bin\Debug\net6.0\HomeworkSeminar7.exe
+C:\Users\Света\Examples\HomeworkSeminar7\bin\Debug\net6.0\HomeworkSeminar7.deps.json
+C:\Users\Света\Examples\HomeworkSeminar7\bin\Debug\net6.0\HomeworkSeminar7.runtimeconfig.json
+C:\Users\Света\Examples\HomeworkSeminar7\bin\Debug\net6.0\HomeworkSeminar7.dll
+C:\Users\Света\Examples\HomeworkSeminar7\bin\Debug\net6.0\HomeworkSeminar7.pdb
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\HomeworkSeminar7.dll
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\refint\HomeworkSeminar7.dll
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\HomeworkSeminar7.pdb
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\HomeworkSeminar7.genruntimeconfig.cache
+C:\Users\Света\Examples\HomeworkSeminar7\obj\Debug\net6.0\ref\HomeworkSeminar7.dll
